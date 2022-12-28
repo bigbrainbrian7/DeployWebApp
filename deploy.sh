@@ -55,7 +55,7 @@ gunzip v0.1.tar.gz
 if [ $? -ne 0]; then
     echo "did not run gunzip correctly"
 fi
-tar -xzf v0.1.tar -C /website
+tar -xvf v0.1.tar -C /website
 if [ $? -ne 0]; then
     echo "did not run untar correctly"
 fi

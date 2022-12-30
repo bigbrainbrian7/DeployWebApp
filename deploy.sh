@@ -71,12 +71,12 @@ if [ $? -ne 0]; then
     echo "did not run wget web-app link correctly"
     exit 12
 fi
-gunzip v0.1.tar.gz
+gunzip v0.1.1.tar.gz
 if [ $? -ne 0]; then
     echo "did not run gunzip correctly"
     exit 13
 fi
-tar -xvf v0.1.tar -C /website
+tar -xvf v0.1.1.tar -C /website
 if [ $? -ne 0]; then
     echo "did not run untar correctly"
     exit 14
@@ -96,7 +96,7 @@ if [ ! -f "/var/log/website/console.log.txt" ]; then
     fi
 fi
 
-nohup python3 /website/Flask-Web-App-Tutorial-0.1/main.py >/var/log/website/console.log.txt
+nohup python3 /website/Flask-Web-App-Tutorial-0.1.1/main.py >/var/log/website/console.log.txt
 if [ $? -ne 0 ]; then
     echo "did not run nohup correctly"
     exit 17

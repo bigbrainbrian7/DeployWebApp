@@ -66,7 +66,7 @@ if [ ! -d "/var/log/website" ]; then
     fi
 fi
 
-wget https://github.com/bigbrainbrian7/Flask-Web-App-Tutorial/archive/refs/tags/v0.1.tar.gz
+wget https://github.com/bigbrainbrian7/Flask-Web-App-Tutorial/archive/refs/tags/v0.1.1.tar.gz
 if [ $? -ne 0]; then
     echo "did not run wget web-app link correctly"
     exit 12

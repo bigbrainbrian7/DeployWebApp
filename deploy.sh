@@ -67,17 +67,17 @@ if [ ! -d "/var/log/website" ]; then
 fi
 
 wget https://github.com/bigbrainbrian7/Flask-Web-App-Tutorial/archive/refs/tags/v0.1.1.tar.gz
-if [ $? -ne 0]; then
+if [ $? -ne 0 ]; then
     echo "did not run wget web-app link correctly"
     exit 12
 fi
 gunzip v0.1.1.tar.gz
-if [ $? -ne 0]; then
+if [ $? -ne 0 ]; then
     echo "did not run gunzip correctly"
     exit 13
 fi
 tar -xvf v0.1.1.tar -C /website
-if [ $? -ne 0]; then
+if [ $? -ne 0 ]; then
     echo "did not run untar correctly"
     exit 14
 fi
